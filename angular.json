@@ -26,9 +26,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/typedoc/bin/typedoc"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
