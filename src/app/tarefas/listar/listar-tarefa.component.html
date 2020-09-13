@@ -1,0 +1,44 @@
+<h1 class="text-center text-primary">Lista de Tarefas</h1>
+
+<table class="table table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col" class="text-center">Tarefa</th>
+      <th scope="col" class="text-center">Concluída</th>
+      <th scope="col" class="text-center">
+        <a class="btn btn-outline-success btn-sm">
+          <span><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+          Novo
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tarefa of tarefas">
+      <td [class.table-success]="!tarefa.concluida">
+        {{ tarefa.nome }}
+      </td>
+      <td class="text-center">
+        <input type="checkbox" class="chk-concluida" [value]="tarefa.id" [checked]="tarefa.concluida">
+      </td>
+      <td class="btn-acoes">
+        <a href="" class="btn btn-outline-info btn-sm">
+          <i class="fa fa-pencil-square" aria-hidden="true"></i>
+          Editar
+        </a>
+        &nbsp;
+        <a href="" class="btn btn-outline-danger btn-sm">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+          Excluir
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="tarefas.length == 0">Nenhuma tarefa cadastrada.</p>
+
+<footer>
+  <p class="float-right"><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+  <p>Desenvolvido por &copy; Paulo Alves</p>
+</footer>
