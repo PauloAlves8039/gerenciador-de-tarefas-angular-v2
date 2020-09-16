@@ -1,0 +1,35 @@
+<h1 class="text-center text-info">Editar tarefa</h1>
+
+<div class="card">
+  <div class="card-body">
+    <form #formTarefa="ngForm">
+      <div class="form-group">
+        <label for="nome">Tarefa:</label>
+        <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="tarefa.nome" #nome="ngModel"
+          minlength=5 required>
+      </div>
+      <div *ngIf="nome.errors && (nome.dirty || nome.touched)" class="alert alert-danger">
+        <div [hidden]="!nome.errors.required">
+          Digite a tarefa
+        </div>
+        <div [hidden]="!nome.errors.minlength">
+          A tarefa deve conter ao menos 5 caracteres.
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-outline-info" (click)="atualizar()" value="Cadastrar"
+          [disabled]="!formTarefa.form.valid">
+          <i class="fa fa-floppy-o" aria-hidden="true"></i>
+          Editar
+        </button>
+        &nbsp;
+        <a [routerLink]="['/tarefas']" class="btn btn-outline-dark">
+          <span aria-hidden="true">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Voltar
+          </span>
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
