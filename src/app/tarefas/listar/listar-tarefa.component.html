@@ -22,12 +22,12 @@
         <input type="checkbox" class="chk-concluida" [value]="tarefa.id" [checked]="tarefa.concluida">
       </td>
       <td class="btn-acoes">
-        <a [routerLink]="['/tarefas/editar', tarefa.id]" href="" class="btn btn-outline-info btn-sm">
+        <a href="#" title="Editar" [routerLink]="['/tarefas/editar', tarefa.id]"  class="btn btn-outline-info btn-sm">
           <i class="fa fa-pencil-square" aria-hidden="true"></i>
           Editar
         </a>
         &nbsp;
-        <a href="" class="btn btn-outline-danger btn-sm">
+        <a href="#" title="Remover" (click)="remover($event, tarefa)" class="btn btn-outline-danger btn-sm">
           <i class="fa fa-trash" aria-hidden="true"></i>
           Excluir
         </a>
