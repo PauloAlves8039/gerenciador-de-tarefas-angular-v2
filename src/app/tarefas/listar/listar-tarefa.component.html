@@ -15,7 +15,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let tarefa of tarefas">
-      <td [class.table-success]="!tarefa.concluida">
+      <td [tarefaConcluida]="tarefa.concluida" [class.table-success]="!tarefa.concluida">
         {{ tarefa.nome }}
       </td>
       <td class="text-center">
