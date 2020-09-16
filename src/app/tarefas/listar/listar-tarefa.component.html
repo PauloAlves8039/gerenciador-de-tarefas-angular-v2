@@ -19,7 +19,7 @@
         {{ tarefa.nome }}
       </td>
       <td class="text-center">
-        <input type="checkbox" class="chk-concluida" [value]="tarefa.id" [checked]="tarefa.concluida">
+        <input type="checkbox" class="chk-concluida" [value]="tarefa.id" [checked]="tarefa.concluida" (click)="alterarStatus(tarefa)">
       </td>
       <td class="btn-acoes">
         <a href="#" title="Editar" [routerLink]="['/tarefas/editar', tarefa.id]"  class="btn btn-outline-info btn-sm">
