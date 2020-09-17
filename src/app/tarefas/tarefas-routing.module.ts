@@ -11,6 +11,7 @@ import { ListarTarefaComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { EditarTarefaComponent } from './editar';
 import { SobreComponent } from './sobre';
+import { ContatoComponent } from './contato';
 
 export const TarefaRoutes: Routes = [
   {
@@ -32,5 +33,9 @@ export const TarefaRoutes: Routes = [
   {
     path: 'tarefas/sobre',
     component: SobreComponent
+  },
+  {
+    path: 'tarefas/contato',
+    component: ContatoComponent
   }
 ];

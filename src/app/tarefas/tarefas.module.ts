@@ -15,6 +15,7 @@ import { ListarTarefaComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { EditarTarefaComponent } from './editar';
 import { SobreComponent } from './sobre';
+import { ContatoComponent } from './contato';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SobreComponent } from './sobre';
     CadastrarTarefaComponent,
     EditarTarefaComponent,
     TarefaConcluidaDirective,
-    SobreComponent
+    SobreComponent,
+    ContatoComponent
   ],
   imports: [
     CommonModule,

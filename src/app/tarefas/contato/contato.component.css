@@ -1,0 +1,36 @@
+.card-contato {
+  margin-top: 8px;
+  max-width: 100%;
+  text-align: justify;
+  box-shadow: 0 4px 4px 0 #696969;
+}
+
+.img-contato-background {
+  width: 100%;
+  height: 400px;
+  filter: brightness(90%) blur(3px);
+}
+
+.icone-background{
+  margin-top: -14px;
+  padding: 6px;
+  color:  #FFFFFF;
+  transition: 0.3s;
+}
+
+.icone-background:hover {
+  color: #007bff;
+}
+
+.imagem-perfil {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  background: url(../../../assets/img/paulo.png) no-repeat;
+}
+
+footer{
+  margin-top: 25px;
+}

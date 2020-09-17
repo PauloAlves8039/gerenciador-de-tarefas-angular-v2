@@ -4,4 +4,5 @@ export * from './listar';
 export * from './cadastrar';
 export * from './editar';
 export * from './sobre';
+export * from './contato';
 export *from './tarefas-routing.module';
