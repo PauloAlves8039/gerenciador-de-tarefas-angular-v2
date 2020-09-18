@@ -17,6 +17,8 @@ export class ListarTarefaComponent implements OnInit {
 
   tarefas: Tarefa[];
 
+  pesquisarPor: string;
+
   constructor(private tarefaService: TarefaService) {}
 
   ngOnInit(): void {
@@ -28,6 +30,27 @@ export class ListarTarefaComponent implements OnInit {
    */
   listarTodos(): Tarefa[] {
     return this.tarefaService.listarTodos();
+  }
+
+  /**
+   * Função para filtrar tarefa informada no input.
+   *
+   * @param value recebe o valor digitado para a pesquisa da tarefa.
+   */
+  set pesquisar(value: string) {
+    this.pesquisarPor = value;
+    // tslint:disable-next-line: max-line-length
+    this.tarefas = this.tarefas.filter((tarefa: Tarefa) => tarefa.nome.toLocaleLowerCase().indexOf(this.pesquisarPor.toLocaleLowerCase()) > - 1);
+  }
+
+  /**
+   * Função para exibir a tarefa filtrada.
+   *
+   * @returns o valor da tarefa pesquisada.
+   */
+  // tslint:disable-next-line: typedef
+  get pesquisar() {
+    return this.pesquisarPor;
   }
 
   /**
