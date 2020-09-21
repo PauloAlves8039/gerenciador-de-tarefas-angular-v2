@@ -14,9 +14,10 @@
 Aplicação web para utilizar um CRUD com o objetivo de gerenciar uma lista de tarefas usando Angular CLI, projeto teve seu código fonte com base no curso [Formação Angular 10 - O início criando 7 projetos](https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/).  
 
 ## :wrench: Recursos Utilizados
-- [Visual Studio Code v1.48.0](https://code.visualstudio.com/).
+- [Visual Studio Code v1.49.1](https://code.visualstudio.com/).
 - [Angular CLI v10.0.5](https://cli.angular.io/).
 - [Bootstrap v4.5.0](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+- [Font Awesome v4.7.0](https://fontawesome.com/v4.7.0/).
 
 ## :floppy_disk: Clonar Repositório
 
