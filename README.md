@@ -1,27 +1,41 @@
-# GerenciadorDeTarefas
+<h1 align="center">Gerenciador de Tarefas V2</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+![Screenshot1](https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2/blob/master/src/assets/img/screenshot1.png)
 
-## Development server
+<p align="center">
+  <a href="https://cli.angular.io/"><img src="https://img.shields.io/badge/angular-CLI-red"></a>
+  <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/"><img src="https://img.shields.io/badge/bootstrap-v4.5.2-blueviolet"></a>
+  <a href="https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-%2376EE00"></a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## :computer: Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Aplicação web para utilizar um CRUD com o objetivo de gerenciar uma lista de tarefas usando Angular CLI, projeto teve seu código fonte com base no curso [Formação Angular 10 - O início criando 7 projetos](https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/).  
 
-## Build
+## :wrench: Recursos Utilizados
+- [Visual Studio Code v1.48.0](https://code.visualstudio.com/).
+- [Angular CLI v10.0.5](https://cli.angular.io/).
+- [Bootstrap v4.5.0](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## :floppy_disk: Clonar Repositório
 
-## Running unit tests
+```git clone https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2.git```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :camera: Screenshots
 
-## Running end-to-end tests
+### Cadastrar tarefa
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![screenshot2](https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2/blob/master/src/assets/img/screenshot2.png)
 
-## Further help
+### Editar tarefa
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![screenshot3](https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2/blob/master/src/assets/img/screenshot3.png)
+
+
+## :pencil: Licença
+Esse projeto está sob a licença [MIT](https://github.com/PauloAlves8039/gerenciador-de-tarefas-angular-v2/blob/master/LICENSE.md)
+
+
+## Author
+:boy: [Paulo Alves](https://github.com/PauloAlves8039)
